@@ -1,0 +1,19 @@
+x = input("Enter the website domain (Example.com/org/etc.) : ")
+weblist = ["detik.com","kompas.com","liputan6.com","unesco.org","who.int","covid19.go.id","bnpb.co.id","gov.uk","bbc.com","bbc.co.uk",
+           "thejakartapost.com","cnn.com"]
+if ".edu" in x:
+    print("This website contains credible information.")
+elif ".gov" in x:
+    print("This website contains credible information. It is owned by the US government.")
+elif ".mil" in x:
+    print("This website contains credible information. It is owned by the US military.")
+elif x in weblist:
+    print("This website contains credible information.")
+elif ".wiki" in x:
+    print("This website does not contain credible information.")
+elif ".blog" in x:
+    print("This website does not contain credible information.")
+elif "quora.com" in x:
+    print("This website does not contain credible information.")
+else:
+    print("This website may not contain credible information.")
